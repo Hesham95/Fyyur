@@ -90,17 +90,17 @@ The API will return three types of errors:
 * General: Returns a list categories.
 * Sample: `curl http://127.0.0.1:5000/categories`<br>
 
-        {
-  	   "Success": true, 
- 	   "categories": {
-  	   "1": "Science", 
-  	   "2": "Art", 
-  	   "3": "Geography", 
-    	   "4": "History", 
-    	   "5": "Entertainment", 
-           "6": "Sports"
- 	 }
-		}
+		{
+		   "Success": true, 
+		   "categories": {
+		   "1": "Science", 
+		   "2": "Art", 
+		   "3": "Geography", 
+		   "4": "History", 
+		   "5": "Entertainment", 
+		   "6": "Sports"
+		 }
+			}
 
 
 
@@ -223,7 +223,7 @@ The API will return three types of errors:
         {
   	  "Success": true, 
  	  "deleted": 6
-	}
+		}
 
 
 #### POST /questions
@@ -240,96 +240,97 @@ This endpoint either creates a new question or returns search results.
             "answer": "Michigan",
             "difficulty": 3,
             "category": "3"
-        }'`<br>
+           }'`<br>
 
         {
-  	"Success": true, 
-  	"created": 61, 
-  	"question_created": "Which US state contains an area known as the Upper Penninsula?", 
-  	"questions": [
-  	{
-    	  "answer": "Muhammad Ali", 
-      	"category": 4, 
-      	"difficulty": 1, 
-      	"id": 9, 
-      	"question": "What boxer's original name is Cassius Clay?"
+		"Success": true, 
+		"created": 61, 
+		"question_created": "Which US state contains an area known as the Upper Penninsula?", 
+		"questions": [
+		{
+		  "answer": "Muhammad Ali", 
+		"category": 4, 
+		"difficulty": 1, 
+		"id": 9, 
+		"question": "What boxer's original name is Cassius Clay?"
+			},
+
+		 {
+	      "answer": "Brazil", 
+	      "category": 6, 
+	      "difficulty": 3, 
+	      "id": 10, 
+	      "question": "Which is the only team to play in every soccer World Cup tournament?"
+		},
+
+		 {
+		"answer": "Uruguay", 
+	      "category": 6, 
+	      "difficulty": 4, 
+	      "id": 11, 
+	      "question": "Which country won the first ever soccer World Cup in 1930?"
+		},
+
+		 {	
+	      "answer": "George Washington Carver", 
+	      "category": 4, 
+	      "difficulty": 2, 
+	      "id": 12, 
+	      "question": "Who invented Peanut Butter?"
 		},
     
-   	 {
-      "answer": "Brazil", 
-      "category": 6, 
-      "difficulty": 3, 
-      "id": 10, 
-      "question": "Which is the only team to play in every soccer World Cup tournament?"
-    	},
-    
-   	 {
-      	"answer": "Uruguay", 
-      "category": 6, 
-      "difficulty": 4, 
-      "id": 11, 
-      "question": "Which country won the first ever soccer World Cup in 1930?"
-    	},
-    
-   	 {	
-      "answer": "George Washington Carver", 
-      "category": 4, 
-      "difficulty": 2, 
-      "id": 12, 
-      "question": "Who invented Peanut Butter?"
-    	},
-    
-    	{
-      "answer": "Lake Victoria", 
-      "category": 3, 
-      "difficulty": 2, 
-      "id": 13, 
-      "question": "What is the largest lake in Africa?"
-    	},
-    
-    	{
-      "answer": "The Palace of Versailles", 
-      "category": 3, 
-      "difficulty": 3, 
-      "id": 14, 
-      "question": "In which royal palace would you find the Hall of Mirrors?"
-   	 },
-    
-   	 {
-      "answer": "Agra", 
-      "category": 3, 
-      "difficulty": 2, 
-      "id": 15, 
-      "question": "The Taj Mahal is located in which Indian city?"
-   	 },
-    
-    	{
-      "answer": "Escher", 
-      "category": 2, 
-      "difficulty": 1, 
-      "id": 16, 
-      "question": "Which Dutch graphic artist\u2013initials M C was a creator of optical illusions?"
-    	},
-    
-    	{
-      "answer": "Mona Lisa", 
-      "category": 2, 
-      "difficulty": 3, 
-      "id": 17, 
-      "question": "La Giaconda is better known as what?"
-    	},
-    
-    	{
-      "answer": "One", 
-      "category": 2, 
-      "difficulty": 4, 
-      "id": 18, 
-      "question": "How many paintings did Van Gogh sell in his lifetime?"
-    	}
-  	],
-  
- 	 "total_questions": 22
-	}
+		{
+	      "answer": "Lake Victoria", 
+	      "category": 3, 
+	      "difficulty": 2, 
+	      "id": 13, 
+	      "question": "What is the largest lake in Africa?"
+		},
+
+		{
+	      "answer": "The Palace of Versailles", 
+	      "category": 3, 
+	      "difficulty": 3, 
+	      "id": 14, 
+	      "question": "In which royal palace would you find the Hall of Mirrors?"
+		 },
+
+		 {
+	      "answer": "Agra", 
+	      "category": 3, 
+	      "difficulty": 2, 
+	      "id": 15, 
+	      "question": "The Taj Mahal is located in which Indian city?"
+		 },
+
+		{
+	      "answer": "Escher", 
+	      "category": 2, 
+	      "difficulty": 1, 
+	      "id": 16, 
+	      "question": "Which Dutch graphic artist\u2013initials M C was a creator of optical illusions?"
+		},
+
+		{
+		
+	      "answer": "Mona Lisa", 
+	      "category": 2, 
+	      "difficulty": 3, 
+	      "id": 17, 
+	      "question": "La Giaconda is better known as what?"
+		},
+
+		{
+	      "answer": "One", 
+	      "category": 2, 
+	      "difficulty": 4, 
+	      "id": 18, 
+	      "question": "How many paintings did Van Gogh sell in his lifetime?"
+		}
+		],
+
+		 "total_questions": 22
+		}
 
                 
       
