@@ -113,18 +113,19 @@ The API will return three types of errors:
 * Sample: `curl http://127.0.0.1:5000/questions`<br>
 
 		{
-  	"Success": true, 
-  	"categories": {
-    	"1": "Science", 
-    	"2": "Art", 
-    	"3": "Geography", 
-    	"4": "History", 
-    	"5": "Entertainment", 
-    	"6": "Sports"
+  		"Success": true, 
+		
+  		"categories": {
+    		"1": "Science", 
+    		"2": "Art", 
+    		"3": "Geography", 
+    		"4": "History", 
+    		"5": "Entertainment", 
+    		"6": "Sports"
   		}, 
   
- 	 "questions": [
-   	 {
+ 	 	"questions": [
+   	 	{
       "answer": "Edward Scissorhands", 
       "category": 5, 
       "difficulty": 3, 
